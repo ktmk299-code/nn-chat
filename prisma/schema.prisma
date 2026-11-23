@@ -14,8 +14,8 @@ datasource db {
 }
 
 model Post {
-  id        int      @id @default(autioncrement())
-  content   string
-  postedBy  string   @db.VarCher(255)
-  createdAT DateTime @db.Timestamptz(6) @default(now())
+  id        Int      @id @default(autoincrement())
+  content   String
+  postedBy  String   @db.VarChar(255)
+  createdAt DateTime @db.Timestamptz(6) @default(now())
   }
